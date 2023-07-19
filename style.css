@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden; 
+}
+.game{
+    background: url(SR.png);
+    background-size: cover;
+    background-position: center;
+    width: 1500px;
+    height: 700px;
+    border: 1px solid black;
+    margin: auto;
+}
+#character{
+    width: 200px;
+    height: 180px;
+    background: url(LOL.jpg);
+    background-size: cover;
+    background-position: center;
+    position:relative;
+    top: 520px;
+}
+.animate{
+    animation: jump 1s linear;
+}
+@keyframes jump{
+    0%{top: 350px;}
+    30%{top: 300px;}
+    50%{top: 200px;}
+    70%{top: 300px;}
+    100%{top: 350px;}
+}
+#enemy{
+    width: 500px;
+    height: 180px;
+    background: url(Jhin.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: 280px;
+    left: 1200px;
+    
+}
+
+#block{
+    background: url(bullet.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 90px;
+    height: 60px;
+    position: relative;
+    top: 400px;
+    left: 1500px;
+    animation: block 1800ms infinite linear;
+}
+@keyframes block{
+    0%{left: 1500px}
+    100%{left: -20px}
+}
+p{
+    text-align: center;
+}
+
